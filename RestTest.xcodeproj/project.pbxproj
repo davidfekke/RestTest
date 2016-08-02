@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20BE2B41D4A814800A0D5D6 /* SaveEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20BE2B31D4A814800A0D5D6 /* SaveEntryViewController.swift */; };
 		B27AAEEA1D4A5AF40037E82B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEE91D4A5AF40037E82B /* AppDelegate.swift */; };
 		B27AAEEC1D4A5AF40037E82B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEEB1D4A5AF40037E82B /* ViewController.swift */; };
 		B27AAEEF1D4A5AF50037E82B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27AAEED1D4A5AF50037E82B /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		B27AAEF41D4A5AF50037E82B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27AAEF21D4A5AF50037E82B /* LaunchScreen.storyboard */; };
 		B27AAEFF1D4A5AF50037E82B /* RestTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEFE1D4A5AF50037E82B /* RestTestTests.swift */; };
 		B27AAF0A1D4A5AF50037E82B /* RestTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAF091D4A5AF50037E82B /* RestTestUITests.swift */; };
+		B27AAF1C1D4A5F510037E82B /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAF1B1D4A5F510037E82B /* EntryTableViewController.swift */; };
+		B27AAF1E1D4A6B300037E82B /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAF1D1D4A6B300037E82B /* EntryDetailViewController.swift */; };
+		B2E4A4DF1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4A4DE1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B20BE2B31D4A814800A0D5D6 /* SaveEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryViewController.swift; sourceTree = "<group>"; };
 		B27AAEE61D4A5AF40037E82B /* RestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27AAEE91D4A5AF40037E82B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27AAEEB1D4A5AF40037E82B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		B27AAF051D4A5AF50037E82B /* RestTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27AAF091D4A5AF50037E82B /* RestTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTestUITests.swift; sourceTree = "<group>"; };
 		B27AAF0B1D4A5AF50037E82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27AAF1B1D4A5F510037E82B /* EntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewController.swift; sourceTree = "<group>"; };
+		B27AAF1D1D4A6B300037E82B /* EntryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		B2E4A4DE1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				B27AAEF01D4A5AF50037E82B /* Assets.xcassets */,
 				B27AAEF21D4A5AF50037E82B /* LaunchScreen.storyboard */,
 				B27AAEF51D4A5AF50037E82B /* Info.plist */,
+				B27AAF1B1D4A5F510037E82B /* EntryTableViewController.swift */,
+				B27AAF1D1D4A6B300037E82B /* EntryDetailViewController.swift */,
+				B20BE2B31D4A814800A0D5D6 /* SaveEntryViewController.swift */,
+				B2E4A4DE1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift */,
 			);
 			path = RestTest;
 			sourceTree = "<group>";
@@ -266,7 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27AAEEC1D4A5AF40037E82B /* ViewController.swift in Sources */,
+				B20BE2B41D4A814800A0D5D6 /* SaveEntryViewController.swift in Sources */,
 				B27AAEEA1D4A5AF40037E82B /* AppDelegate.swift in Sources */,
+				B27AAF1E1D4A6B300037E82B /* EntryDetailViewController.swift in Sources */,
+				B27AAF1C1D4A5F510037E82B /* EntryTableViewController.swift in Sources */,
+				B2E4A4DF1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RestTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RestTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +521,7 @@
 				B27AAF101D4A5AF50037E82B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B27AAF111D4A5AF50037E82B /* Build configuration list for PBXNativeTarget "RestTestTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +530,7 @@
 				B27AAF131D4A5AF50037E82B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B27AAF141D4A5AF50037E82B /* Build configuration list for PBXNativeTarget "RestTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +539,7 @@
 				B27AAF161D4A5AF50037E82B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

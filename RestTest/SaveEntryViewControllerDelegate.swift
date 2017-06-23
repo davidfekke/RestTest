@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 protocol SaveEntryViewControllerDelegate {
-    func didFinishSaving(controller: UIViewController, entry: String)
+    func didFinishSaving(_ controller: UIViewController, entry: String)
 }

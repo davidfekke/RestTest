@@ -29,18 +29,21 @@ class SaveEntryViewController: UIViewController {
         if let entry = entryNameField?.text {
             if entry.isEmpty {
                 let alertController = UIAlertController(title: "Nothing Enetered", message:"You must add text before saving", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction) in NSLog("Ok pressed")})
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: { action in NSLog("Ok is pressed.") })
+                //                let okAction = UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction)
+//                    in NSLog("Ok pressed")
+//                })
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
             } else {
-                delegate?.didFinishSaving(controller: self, entry: entry)
+                delegate?.didFinishSaving(self, entry: entry)
                 dismiss(animated: true, completion: nil)
             }
         }
     }
 
     @IBAction func cancelAction(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

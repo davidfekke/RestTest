@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+import Firebase
 
 class EntryTableViewController: UITableViewController, SaveEntryViewControllerDelegate {
 
@@ -16,13 +18,28 @@ class EntryTableViewController: UITableViewController, SaveEntryViewControllerDe
                 "Melon", "Nectarine", "Olive", "Orange", "Papaya", "Peach",
                 "Pear", "Pineapple", "Raspberry", "Strawberry"]
     
+    var fruits = [NSManagedObject]()
+    var ref = FIRDatabase.database().reference()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        //let tempSource = (self.ref.child("myFruits").queryLimited(toFirst: 100))
+        
+        ref.observeSingleEvent(of: .value, with: { snapshot in
+            // do some stuff once
+            //let myChildren = snapshot.children
+//            myChildren.forEach(body: child ->,, in {
+//                    print(child)
+//                })
+            //dataSource?.append(snapshot as String)
+        })
+        
+        //dataSource = tempSource as! [Int, String]?
+        
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItemToDataSource(_:)))
         navigationItem.rightBarButtonItem = addButton
     }
@@ -32,19 +49,19 @@ class EntryTableViewController: UITableViewController, SaveEntryViewControllerDe
         // Dispose of any resources that can be recreated.
     }
 
-    func addItemToDataSource(_ sender: AnyObject) {
-
-        let controller = storyboard?.instantiateViewController(withIdentifier: "SaveEntry") as? SaveEntryViewController;
-        controller?.delegate = self
-        present(controller!, animated: true, completion: nil)
+    @objc func addItemToDataSource(_ sender: AnyObject) {
+        let contllr = storyboard?.instantiateViewController(withIdentifier: "SaveEntry") as? SaveEntryViewController
+        //let controller = storyboard?.instantiateViewController(withIdentifier: "SaveEntry") as? SaveEntryViewController;
+        contllr?.delegate = self
+        present(contllr!, animated: true)
+        //present(controller!, animated: true, completion: nil)
         
     }
     
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 1;
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,14 +122,14 @@ class EntryTableViewController: UITableViewController, SaveEntryViewControllerDe
 
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "EntryDetail" {
             if let viewController = segue.destination as? EntryDetailViewController {
-                let indexPath: NSIndexPath = self.tableView.indexPathForSelectedRow!
+                let indexPath: IndexPath = self.tableView.indexPathForSelectedRow!
                 if let object = dataSource?[indexPath.row] {
                     viewController.entryItem = Entry(name: object, which: indexPath.row+1)
                 }
@@ -121,7 +138,7 @@ class EntryTableViewController: UITableViewController, SaveEntryViewControllerDe
         }
     }
     
-    func didFinishSaving(controller: UIViewController, entry: String) -> Void {
+    func didFinishSaving(_ controller: UIViewController, entry: String) -> Void {
         if dataSource != nil {
             if !(dataSource?.contains(entry))! {
                 dataSource!.append(entry)

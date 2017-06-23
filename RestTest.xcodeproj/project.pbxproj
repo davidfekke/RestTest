@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2028BA61D66222D00917859 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2028BA51D66222D00917859 /* GoogleService-Info.plist */; };
 		B20BE2B41D4A814800A0D5D6 /* SaveEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20BE2B31D4A814800A0D5D6 /* SaveEntryViewController.swift */; };
 		B27AAEEA1D4A5AF40037E82B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEE91D4A5AF40037E82B /* AppDelegate.swift */; };
 		B27AAEEC1D4A5AF40037E82B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEEB1D4A5AF40037E82B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 		B27AAF1C1D4A5F510037E82B /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAF1B1D4A5F510037E82B /* EntryTableViewController.swift */; };
 		B27AAF1E1D4A6B300037E82B /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAF1D1D4A6B300037E82B /* EntryDetailViewController.swift */; };
 		B2E4A4DF1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E4A4DE1D4AA89500C4DF24 /* SaveEntryViewControllerDelegate.swift */; };
+		CE7A955FAB6B36D49BDF3905 /* Pods_RestTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A2CA45E39354A682B4B43 /* Pods_RestTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171614C9F46D07B74EEBE2BC /* Pods-RestTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestTest/Pods-RestTest.debug.xcconfig"; sourceTree = "<group>"; };
+		3AF0AE08AFD16F1B59293B50 /* Pods-RestTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestTest/Pods-RestTest.release.xcconfig"; sourceTree = "<group>"; };
+		8D5A2CA45E39354A682B4B43 /* Pods_RestTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2028BA51D66222D00917859 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B20BE2B31D4A814800A0D5D6 /* SaveEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryViewController.swift; sourceTree = "<group>"; };
 		B27AAEE61D4A5AF40037E82B /* RestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27AAEE91D4A5AF40037E82B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7A955FAB6B36D49BDF3905 /* Pods_RestTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00115932EA4215934933DA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A2CA45E39354A682B4B43 /* Pods_RestTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B27AAEDD1D4A5AF40037E82B = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,8 @@
 				B27AAEFD1D4A5AF50037E82B /* RestTestTests */,
 				B27AAF081D4A5AF50037E82B /* RestTestUITests */,
 				B27AAEE71D4A5AF40037E82B /* Products */,
+				B7ECA7E1B7D17604305071C4 /* Pods */,
+				00115932EA4215934933DA80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +122,7 @@
 		B27AAEE81D4A5AF40037E82B /* RestTest */ = {
 			isa = PBXGroup;
 			children = (
+				B2028BA51D66222D00917859 /* GoogleService-Info.plist */,
 				B27AAEE91D4A5AF40037E82B /* AppDelegate.swift */,
 				B27AAEEB1D4A5AF40037E82B /* ViewController.swift */,
 				B27AAEED1D4A5AF50037E82B /* Main.storyboard */,
@@ -137,6 +155,15 @@
 			path = RestTestUITests;
 			sourceTree = "<group>";
 		};
+		B7ECA7E1B7D17604305071C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				171614C9F46D07B74EEBE2BC /* Pods-RestTest.debug.xcconfig */,
+				3AF0AE08AFD16F1B59293B50 /* Pods-RestTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B27AAF0E1D4A5AF50037E82B /* Build configuration list for PBXNativeTarget "RestTest" */;
 			buildPhases = (
+				C168DEA277A0414B25B374F2 /* [CP] Check Pods Manifest.lock */,
 				B27AAEE21D4A5AF40037E82B /* Sources */,
 				B27AAEE31D4A5AF40037E82B /* Frameworks */,
 				B27AAEE41D4A5AF40037E82B /* Resources */,
+				9DCA0AB21EDDAA746EF95CC3 /* [CP] Embed Pods Frameworks */,
+				F6448E90C24626847E696C35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,19 +230,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "David Fekke";
 				TargetAttributes = {
 					B27AAEE51D4A5AF40037E82B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JXRDDKQ33V;
 						DevelopmentTeamName = "David Fekke (Personal Team)";
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					B27AAEF91D4A5AF50037E82B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BEG67R9YEK;
 						DevelopmentTeamName = "David Fekke (Personal Team)";
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B27AAEE51D4A5AF40037E82B;
 					};
@@ -220,6 +252,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BEG67R9YEK;
 						DevelopmentTeamName = "David Fekke (Personal Team)";
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B27AAEE51D4A5AF40037E82B;
 					};
@@ -251,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27AAEF41D4A5AF50037E82B /* LaunchScreen.storyboard in Resources */,
+				B2028BA61D66222D00917859 /* GoogleService-Info.plist in Resources */,
 				B27AAEF11D4A5AF50037E82B /* Assets.xcassets in Resources */,
 				B27AAEEF1D4A5AF50037E82B /* Main.storyboard in Resources */,
 			);
@@ -271,6 +305,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DCA0AB21EDDAA746EF95CC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestTest/Pods-RestTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C168DEA277A0414B25B374F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6448E90C24626847E696C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestTest/Pods-RestTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B27AAEE21D4A5AF40037E82B /* Sources */ = {
@@ -346,14 +428,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -394,14 +484,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -428,6 +526,7 @@
 		};
 		B27AAF0F1D4A5AF50037E82B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171614C9F46D07B74EEBE2BC /* Pods-RestTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
@@ -436,12 +535,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		B27AAF101D4A5AF50037E82B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF0AE08AFD16F1B59293B50 /* Pods-RestTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
@@ -450,7 +551,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -462,7 +564,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestTest.app/RestTest";
 			};
 			name = Debug;
@@ -475,7 +578,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestTest.app/RestTest";
 			};
 			name = Release;
@@ -487,7 +591,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = RestTest;
 			};
 			name = Debug;
@@ -499,7 +604,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swyftmobile.RestTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = RestTest;
 			};
 			name = Release;
